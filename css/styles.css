@@ -1,0 +1,17 @@
+body {
+    background-color: #6499E9;
+}
+
+.custom-height-80 {
+    height: 80vh;
+}
+
+#message {
+    height: 25vh;
+}
+
+#output {
+    height: 35vh;
+    color: white;
+    background-color: white;
+}
