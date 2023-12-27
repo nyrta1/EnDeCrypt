@@ -9,6 +9,10 @@ $(document).ready(function() {
             $("#output").val(encrypted.toString());
         } else {
             var decrypted = CryptoJS.AES.decrypt(message, key);
+            if (decrypted.sigBytes < 0) {
+                $("#output").val("Secret Password is incorrect!");
+                return;
+            }
             $("#output").val(decrypted.toString(CryptoJS.enc.Utf8));
         }
     });
